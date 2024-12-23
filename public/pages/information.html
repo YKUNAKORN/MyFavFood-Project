@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Head title -->
+    <title>MyFavFood | Information</title>
+    <!-- Fav icon -->
+    <link rel="icon" href="../assets/images/FAVICON/apple-icon.png" type="image/png">    
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/information.css">
+    <!-- Link Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Left sidebar -->
+        <div class="l-sidebar">
+            <a href="../pages/overview.html">
+                <h1 class="logo">MyFavFood</h1>
+            </a>
+            <nav>
+                <a href="../pages/overview.html"><i class="bi bi-pie-chart"></i> Overview</a>
+                <a href="../pages/ring-sales.html"><i class="bi bi-graph-up"></i> Ring Sales</a>
+                <a href="../pages/finished-waste.html"><i class="bi bi-trash"></i> Finished Waste</a>
+                <a href="../pages/employees.html" class="active"><i class="bi bi-people"></i> Employees</a>
+                <a href="../pages/cash-control.html"><i class="bi bi-cash"></i> Cash Control</a>
+                <a href="../pages/inventory.html"><i class="bi bi-box-seam"></i> Inventory</a>
+            </nav>
+            <a href="../index.html" class="signout"><i class="bi bi-box-arrow-right"></i> Sign Out</a>
+        </div><!-- Left sidebar end -->
+
+        <!-- Right sidebar -->
+        <div class="r-sidebar">
+            <header>
+                <div class="nav-current">
+                    <p class="nav">Employees</p>
+                    <p class="nav">></p>
+                    <p class="nav-active">Information</p>
+                </div>
+                <div class="user-info">
+                    Guest01
+                    <span class="role">Admin</span>
+                </div>
+            </header>
+            <!-- main container -->
+            <section class="main-container">
+                <!-- section 1 -->
+                <div class="section1">
+                    <div class="top-title">
+                        <p class="nav-text-active">Information</p>
+                        <p class="nav-text">></p>
+                        <p class="nav-text">Nicolas Jackson</p>
+                    </div>
+                    <a href="../pages/employees.html">
+                        <button class="back-btn"><i class="bi bi-caret-left"></i>Back</button>
+                    </a>
+                </div>
+                <!-- section 2 -->
+                <div class="section2">
+                    <!-- left-section 2 -->
+                    <div class="left-section2">
+                        <img src="../assets/images/Profile-img/unknow-profile.jpg" alt="Unknown" class="profile-img">
+                        
+                        
+                        <div>
+<!--                             
+                            <p><strong>ID: </strong> <span id="emp-id">Loading...</span></p>
+                            <p><strong>Name:</strong>     <span id="emp-name">Loading...</span></p>
+                            <p><strong>NickName:</strong> <span id="emp-nickname">Loading...</span></p>
+                            <p><strong>Position:</strong> <span id="emp-position">Loading...</span></p>
+                            <p><strong>Adress:</strong> <span id="emp-address">Loading...</span></p>
+                            <p><strong>Gender:</strong> <span id="emp-gender">Loading...</span></p>
+                            <p><strong>Gmail:</strong> <span id="emp-email">Loading...</span></p>
+                            <p><strong>Phone:</strong> <span id="emp-phone">Loading...</span></p>
+                            <p><strong>Contract:</strong> <span id="emp-contract">Loading...</span></p> -->
+                            
+                            
+                            <div class="employee-table-container">
+                                <table class="employee-table">
+                                    <!-- <tr>
+                                        <th>ID</th>
+                                        <td id="emp-id">Loading...</td>
+                                    </tr> -->
+                                    <tr>
+                                        <th>Name</th>                   <td id="emp-name">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>NickName</th>               <td id="emp-nickname">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Position</th>               <td id="emp-position">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Address</th>                <td id="emp-address">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Gender</th>                 <td id="emp-gender">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Gmail</th>                  <td id="emp-email">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>                  <td id="emp-phone">Loading...</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contract</th>               <td id="emp-contract">Loading...</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            
+
+                        
+                        <!-- <table>
+                            <thead>
+                                <tr>
+                                    <td class="tb-left">First name</td>             <td  id="emp-id" class="tb-right">Loading...</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Last Name</td>              <td id="emp-name "class="tb-right">Chuawong</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Gender</td>                 <td class="tb-right">Male</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Address</td>                <td class="tb-right">Bangkok</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Tel</td>                    <td class="tb-right">0829099626</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Job position</td>           <td class="tb-right">Manager</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Contract ID</td>            <td class="tb-right">10001</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Email</td>                  <td class="tb-right">kobchok.ch@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="tb-left">Username</td>               <td class="tb-right">Folk</td>
+                                </tr>
+                            </thead>
+                        </table> -->
+                        </div>
+                        <a href="../pages/edit-profile.html" class="edit-profile-button" id="edit-profile-button" >Edit profile</a>
+                    </div>
+                    
+                    <!-- right-section 2 -->
+                    <div class="right-section2">
+                        <div class="col-md-8">
+                            <div class="history-card">
+                                <h5 class="mb-3">History</h5>
+                                <p class="text-muted">Working Summary</p>
+
+                                    <div class="history-box day-off">
+                                        <i class="bi bi-calendar-x"></i>
+                                        <h6>8 Days</h6>
+                                        <p>Total day off</p>
+                                    </div>
+                                    <div class="history-box leave-day">
+                                        <i class="bi bi-calendar2-minus"></i>
+                                        <h6>2 Days</h6>
+                                        <p>Total leave day</p>
+                                    </div>
+                                    <div class="history-box work-day">
+                                        <i class="bi bi-calendar-check"></i>
+                                        <h6>22 Days</h6>
+                                        <p>Total day work</p>
+                                    </div>
+
+                            </div>
+                            <!-- 
+                            <div class="performance-card">
+                                <h5>Performance</h5>
+                                <canvas id="performanceChart"></canvas>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- Footer -->
+            <footer>
+                <div class="footer-section">
+                    <h3>ABOUT MyFavFood</h3> <br>
+                    <p>Our project's main goal is to make managing and running your business easier for you. Similar to Point of Sale, it helps you manage your own restaurant, control cash flow, and determine how much inventory you need. The interface user-friendly layout. You'll always have the most recent information.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>MORE INFORMATION</h3> <br>
+                    <div class="more-information-row">
+                        <div class="more-information-column1">
+                            <a href="../pages/overview.html">Overview</a>
+                            <a href="../pages/ring-sales.html">Ring Sales</a>
+                            <a href="../pages/finished-waste.html">Finished Waste</a>
+                            <a href="#">Recall Order</a>
+                            <a href="../pages/employees.html">Employees</a>
+                        </div>
+                        <div class="more-information-column2">
+                            <a href="../pages/time-punch.html">Time Punch</a>
+                            <a href="../pages/information.html">Information</a>
+                            <a href="../pages/cash-control.html">Cash Control</a>
+                            <a href="../pages/reprint.html">Reprint</a>
+                            <a href="../pages/void.html">Void Transaction</a>
+                        </div>
+                        <div class="more-information-column3">
+                            <a href="../pages/inventory.html">Inventory</a>
+                            <a href="../pages/delivery.html">Delivery</a>
+                            <a href="../pages/edit-waste.html">Edit Waste</a>
+                            <a href="../pages/stock.html">Stock</a>
+                            <a href="../pages/waste.html">Waste</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>CONTACT INFORMATION </h3> <br>
+                    <p>© MyFavFood Theme by Y.KUNAKORN</p>
+                    <p>Power by  Unknown banner</p> <br>
+                    <p>MyFavFood Co., Ltd.</p>
+                    <p>Tel: +66 83 151 5661</p>
+                </div>
+            </footer><!-- Footer end -->
+
+        </div><!-- Right sidebar end -->
+
+    </div><!-- Main content end -->
+   
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="../js/information.js"></script>
+</body>
+</html>

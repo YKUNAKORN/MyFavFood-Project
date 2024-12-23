@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Head title -->
+    <title>MyFavFood | Edit profile Up</title>
+    <!-- Fav icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/FAVICON/favicon.ico">
+    <!-- Font link -->
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/edit-profile.css">
+    <!-- Link Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Left sidebar -->
+        <div class="l-sidebar">
+            <div class="sign-up">
+                <h1 class="title">MyFavFood</h1>
+                <h4>Edit your profile</h4>
+                <p class="p-detail">
+                    Select your personal information down below to change your account detail.
+                </p>
+                <form id="sign-upForm" action="/signup" method="post">
+                    <div class="input-group">
+                        <p>First name</p>
+                        <label for="first-name">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="first-name" name="emp_fname" placeholder="Edit your first name">
+                        </label>
+
+                        <p>Last name</p>
+                        <label for="last-name">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="last-name" name="emp_lname" placeholder="Edit your last name">
+                        </label>
+
+                        <p>Nickname</p>
+                        <label for="username">
+                        <i class="bi bi-envelope icon"></i>
+                            <input type="text" id="username" name="emp_uname" placeholder="Edit your nickname">
+                        </label>
+                        
+                        <p>Gender</p>
+                        <label for="gender">
+                        <i class="bi bi-gender-male icon"></i>
+                        <input list="gender" name="emp_gender" placeholder="Change your gender">
+                            <datalist id="gender">
+                                <option value="Male">
+                                <option value="Female">
+                            </datalist>
+                        </label>
+
+                        <p>Address</p>
+                        <label for="address">
+                        <i class="bi bi-pin-map icon"></i>
+                        <input list="province-options" name="address" id="province" placeholder="Change your province">
+                            <datalist id="province-options">
+                                <option value="Bangkok">
+                                <option value="Samut Prakan">
+                                <option value="Nonthaburi">
+                                <option value="Pathum Thani">
+                                <option value="Phra Nakhon Si Ayutthaya">
+                                <option value="Ang Thong">
+                                <option value="Lopburi">
+                                <option value="Sing Buri">
+                                <option value="Chai Nat">
+                                <option value="Saraburi">
+                                <option value="Chonburi">
+                                <option value="Rayong">
+                                <option value="Chanthaburi">
+                                <option value="Trat">
+                                <option value="Chachoengsao">
+                                <option value="Prachinburi">
+                                <option value="Nakhon Nayok">
+                                <option value="Sa Kaeo">
+                                <option value="Nakhon Ratchasima">
+                                <option value="Buri Ram">
+                                <option value="Surin">
+                                <option value="Sisaket">
+                                <option value="Ubon Ratchathani">
+                                <option value="Yasothon">
+                                <option value="Chaiyaphum">
+                                <option value="Amnat Charoen">
+                                <option value="Nong Bua Lamphu">
+                                <option value="Khon Kaen">
+                                <option value="Udon Thani">
+                                <option value="Loei">
+                                <option value="Nong Khai">
+                                <option value="Maha Sarakham">
+                                <option value="Roi Et">
+                                <option value="Kalasin">
+                                <option value="Sakon Nakhon">
+                                <option value="Nakhon Phanom">
+                                <option value="Mukdahan">
+                                <option value="Chiang Mai">
+                                <option value="Lamphun">
+                                <option value="Lampang">
+                                <option value="Uttaradit">
+                                <option value="Phrae">
+                                <option value="Nan">
+                                <option value="Phayao">
+                                <option value="Chiang Rai">
+                                <option value="Mae Hong Son">
+                                <option value="Nakhon Sawan">
+                                <option value="Uthai Thani">
+                                <option value="Kamphaeng Phet">
+                                <option value="Tak">
+                                <option value="Sukhothai">
+                                <option value="Phitsanulok">
+                                <option value="Phichit">
+                                <option value="Phetchabun">
+                                <option value="Ratchaburi">
+                                <option value="Kanchanaburi">
+                                <option value="Suphanburi">
+                                <option value="Nakhon Pathom">
+                                <option value="Samut Sakhon">
+                                <option value="Samut Songkhram">
+                                <option value="Phetchaburi">
+                                <option value="Prachuap Khiri Khan">
+                                <option value="Chumphon">
+                                <option value="Ranong">
+                                <option value="Surat Thani">
+                                <option value="Phang Nga">
+                                <option value="Phuket">
+                                <option value="Krabi">
+                                <option value="Nakhon Si Thammarat">
+                                <option value="Trang">
+                                <option value="Phatthalung">
+                                <option value="Songkhla">
+                                <option value="Satun">
+                                <option value="Pattani">
+                                <option value="Yala">
+                                <option value="Narathiwat">
+                            </datalist>
+                        </label>
+
+                        <p>Tel</p>
+                        <label for="tel">
+                        <i class="bi bi-telephone-plus icon"></i>
+                            <input type="tel" id="tel" name="emp_phone" placeholder="0XX-XXX-XXXX">
+                        </label>
+
+                        <p>Job position</p>
+                        <label for="position">
+                        <i class="bi bi-person-workspace icon"></i>
+                        <input list="position" name="emp_pos" placeholder="Change your job position">
+                            <datalist id="position">
+                                <option value="Manager">
+                                <option value="Assistance-manager">
+                                <option value="Employee">
+                                <option value="Part-time">
+                            </datalist>
+                        </label>
+
+                        <p>Contract ID</p>
+                        <label for="contract-id">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="contract-id" name="contract-id" placeholder="10000">
+                        </label>
+
+                        <p>Email</p>
+                        <label for="email">
+                        <i class="bi bi-envelope icon"></i>
+                            <input type="email" id="email" name="emp_email" placeholder="changeYour.email@mail.com">
+                        </label>
+
+                        <p>Password</p>
+                        <label for="password">
+                        <i class="bi bi-lock icon"></i>
+                            <input type="password" id="password" name="emp_pass" placeholder="* * * * * * * * * * * * * * *">
+                        </label>
+                    </div>
+
+                    <button type="submit" class="save-btn">Save</button>
+                    
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="back-btn">
+                        <a href="../pages/employees.html">Back?</a>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <div class="r-sidebar">
+            <img src="../assets/images/BG/Forgor-passwordBG.jpg" alt="">
+        </div>
+
+    </div>
+    <script>
+        const token = localStorage.getItem('token'); // Retrieve token from localStorage
+        if (!token) {
+            alert('You need to log in first.');
+            window.location.href = '../index.html'; // Redirect to login page if no token
+        } else {
+            // ส่งคำขอไปที่ API เพื่อตรวจสอบสิทธิ์ก่อน
+            fetch('/permission', {
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bearer ' + token, // ส่ง Token ไปใน Header
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to authenticate token');
+                }
+                return response.json(); // แปลงเป็น JSON
+            })
+            .then(data => {
+                console.log('API Response:', data); // ดูข้อมูลที่ได้รับจาก API
+                if (data.message === 'You have permission to edit the profile') {
+                    // หากได้รับอนุญาตให้เข้าถึงหน้า edit-profile
+                    document.getElementById('edit-profile-form').style.display = 'block'; // แสดงฟอร์ม
+                } else {
+                    // หากไม่มีสิทธิ์ให้กลับไปที่หน้า information
+                    alert(data.message);
+                    window.location.href = '../pages/information.html'; // กลับไปหน้า information
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again later.');
+                window.location.href = '../pages/information.html';
+            });
+        }
+    </script> --> 
+    <!-- check access code
+    
+    <script src="../js/editprofile.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Head title -->
+    <title>MyFavFood | Sign Up</title>
+    <!-- Fav icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/FAVICON/favicon.ico">
+    <!-- Font link -->
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <!-- Link Boostrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Left sidebar -->
+        <div class="l-sidebar">
+            <div class="sign-up">
+                <h1 class="title">MyFavFood</h1>
+                <h4>Sign up</h4>
+                <p class="p-detail">
+                    Enter your detail down below to create your account and get startd.
+                </p>
+                <form id="sign-upForm" action="/signup" method="post">
+                    <div class="input-group">
+                        <p>First name</p>
+                        <label for="first-name">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="first-name" name="emp_fname" placeholder="Enter your first name here" required>
+                        </label>
+
+                        <p>Last name</p>
+                        <label for="last-name">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="last-name" name="emp_lname" placeholder="Enter your last name here" required>
+                        </label>
+
+                        <p>Nickname</p>
+                        <label for="username">
+                        <i class="bi bi-envelope icon"></i>
+                            <input type="text" id="username" name="emp_uname" placeholder="Enter your nickname here" required>
+                        </label>
+                        
+                        <p>Gender</p>
+                        <label for="gender">
+                        <i class="bi bi-gender-male icon"></i>
+                        <input list="gender" name="emp_gender" placeholder="Select your gender" required>
+                            <datalist id="gender">
+                                <option value="Male">
+                                <option value="Female">
+                            </datalist>
+                        </label>
+
+                        <p>Address</p>
+                        <label for="address">
+                        <i class="bi bi-pin-map icon"></i>
+                        <input list="province-options" name="address" id="province" placeholder="Select your province" required>
+                            <datalist id="province-options">
+                                <option value="Bangkok">
+                                <option value="Samut Prakan">
+                                <option value="Nonthaburi">
+                                <option value="Pathum Thani">
+                                <option value="Phra Nakhon Si Ayutthaya">
+                                <option value="Ang Thong">
+                                <option value="Lopburi">
+                                <option value="Sing Buri">
+                                <option value="Chai Nat">
+                                <option value="Saraburi">
+                                <option value="Chonburi">
+                                <option value="Rayong">
+                                <option value="Chanthaburi">
+                                <option value="Trat">
+                                <option value="Chachoengsao">
+                                <option value="Prachinburi">
+                                <option value="Nakhon Nayok">
+                                <option value="Sa Kaeo">
+                                <option value="Nakhon Ratchasima">
+                                <option value="Buri Ram">
+                                <option value="Surin">
+                                <option value="Sisaket">
+                                <option value="Ubon Ratchathani">
+                                <option value="Yasothon">
+                                <option value="Chaiyaphum">
+                                <option value="Amnat Charoen">
+                                <option value="Nong Bua Lamphu">
+                                <option value="Khon Kaen">
+                                <option value="Udon Thani">
+                                <option value="Loei">
+                                <option value="Nong Khai">
+                                <option value="Maha Sarakham">
+                                <option value="Roi Et">
+                                <option value="Kalasin">
+                                <option value="Sakon Nakhon">
+                                <option value="Nakhon Phanom">
+                                <option value="Mukdahan">
+                                <option value="Chiang Mai">
+                                <option value="Lamphun">
+                                <option value="Lampang">
+                                <option value="Uttaradit">
+                                <option value="Phrae">
+                                <option value="Nan">
+                                <option value="Phayao">
+                                <option value="Chiang Rai">
+                                <option value="Mae Hong Son">
+                                <option value="Nakhon Sawan">
+                                <option value="Uthai Thani">
+                                <option value="Kamphaeng Phet">
+                                <option value="Tak">
+                                <option value="Sukhothai">
+                                <option value="Phitsanulok">
+                                <option value="Phichit">
+                                <option value="Phetchabun">
+                                <option value="Ratchaburi">
+                                <option value="Kanchanaburi">
+                                <option value="Suphanburi">
+                                <option value="Nakhon Pathom">
+                                <option value="Samut Sakhon">
+                                <option value="Samut Songkhram">
+                                <option value="Phetchaburi">
+                                <option value="Prachuap Khiri Khan">
+                                <option value="Chumphon">
+                                <option value="Ranong">
+                                <option value="Surat Thani">
+                                <option value="Phang Nga">
+                                <option value="Phuket">
+                                <option value="Krabi">
+                                <option value="Nakhon Si Thammarat">
+                                <option value="Trang">
+                                <option value="Phatthalung">
+                                <option value="Songkhla">
+                                <option value="Satun">
+                                <option value="Pattani">
+                                <option value="Yala">
+                                <option value="Narathiwat">
+                            </datalist>
+                        </label>
+
+                        <p>Tel</p>
+                        <label for="tel">
+                        <i class="bi bi-telephone-plus icon"></i>
+                            <input type="tel" id="tel" name="emp_phone" placeholder="0XX-XXX-XXXX" required>
+                        </label>
+
+                        <p>Job position</p>
+                        <label for="position">
+                        <i class="bi bi-person-workspace icon"></i>
+                        <input list="position" name="emp_pos" placeholder="Select your job position" required>
+                            <datalist id="position">
+                                <option value="Manager">
+                                <option value="Assistance-manager">
+                                <option value="Employee">
+                                <option value="Part-time">
+                            </datalist>
+                        </label>
+
+                        <p>Contract ID</p>
+                        <label for="contract-id">
+                        <i class="bi bi-fonts icon"></i>
+                            <input type="text" id="contract-id" name="contract-id" placeholder="10000" required>
+                        </label>
+
+                        <p>Email</p>
+                        <label for="email">
+                        <i class="bi bi-envelope icon"></i>
+                            <input type="email" id="email" name="emp_email" placeholder="your.email@mail.com" required>
+                        </label>
+
+                        <p>Password</p>
+                        <label for="password">
+                        <i class="bi bi-lock icon"></i>
+                            <input type="password" id="password" name="emp_pass" placeholder="* * * * * * * * * * * * * * *" required>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="create-account-btn">Create account</button>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="home">
+                        <p>You want to go back overview?</p>
+                        <a href="./overview.html">Overview</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <div class="r-sidebar">
+            <img src="../assets/images/BG/Forgor-passwordBG.jpg" alt="">
+        </div>
+
+    </div>
+    <script src="../js/sign-up.js">
+    </script>
+</body>
+</html>

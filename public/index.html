@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFavFood | Login</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/FAVICON/apple-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="l-sidebar">
+            <img src="./assets/images/BG/LoginBG.jpg" alt="Background Image">
+        </div>
+        <div class="r-sidebar">
+            <div class="login-form">
+                <h1 class="title">MyFavFood</h1>
+                <h4>Login</h4>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <p>Email</p>
+                        <label for="email">
+                            <i class="bi bi-envelope icon"></i>
+                            <input type="email" id="email" name="email" placeholder="your.email@mail.com" required>
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <p>Password</p>
+                        <label for="password">
+                            <i class="bi bi-lock icon"></i>
+                            <input type="password" id="password" name="password" placeholder="* * * * * * * * * * * * * * *" required>
+                        </label>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- เพิ่ม JavaScript -->
+    <script>
+        const loginForm = document.getElementById('loginForm');
+loginForm.addEventListener('submit', async (e) => {
+    e.preventDefault(); // ป้องกันการรีเฟรชหน้า
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    try {
+        const response = await fetch('http://localhost:3000/api/auth/login', { // URL ต้องชี้ไปยัง backend
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password }),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            alert(errorData.message || 'Login failed');
+            return;
+        }
+
+        const data = await response.json();
+
+        if (data.token) {
+            localStorage.setItem('token', data.token); // เก็บ JWT
+            alert(data.message); // แสดงข้อความจาก Backend เช่น "Login successful! Token created."
+            window.location.href = './pages/overview.html'; // ย้ายไปยังหน้าอื่น
+        } else {
+            alert('Failed to receive token.');
+        }
+    } catch (error) {
+        console.error('Fetch Error:', error);
+        alert('An error occurred. Please try again.');
+    }
+});
+
+
+
+
+    </script>
+</body>
+</html>
+res.status(200).json({
+    message: 'Token successfully created!',
+    token: token,
+});

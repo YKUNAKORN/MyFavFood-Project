@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main-content {
+    display: flex;
+    min-height: 100vh;
+    background-color: #F5F5F7;
+}
+
+.l-sidebar {
+    width: 422px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l-sidebar .logo {
+    font-size: 24px;
+    color: #00D886;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bi-pie-chart , .bi-graph-up , .bi-trash , .bi-people , .bi-cash , .bi-box-seam {
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.l-sidebar nav a {
+    display: block;
+    color: #7E7E7E;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.l-sidebar nav a:hover {
+    color: #1D1D1F;
+}
+
+.l-sidebar nav a.active {
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight:600;
+    background: linear-gradient(90deg, #01C4F4, #00D886, #F0EB19);
+    border-radius: 12px;
+}
+
+.signout {
+    padding-left: 20px;
+    color: #FA5A7D;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.signout:hover {
+    color: #b30000;
+}
+
+/* r-sidebar */
+.r-sidebar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid1 {
+    margin: 20px 20px 0px 20px;
+}
+
+.mid2 {
+    margin: 20px 20px 20px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1D1F;
+}
+
+.nav-current {
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px;
+}
+
+.nav-active {
+    color: #00D886;
+    font-weight: bold;
+}
+
+.user-info {
+    font-size: 15px;
+}
+
+.user-info .role {
+    display: flex;
+    flex-direction: column;
+    color: #7E7E7E;
+    font-size: 10px;
+}
+
+
+
+/* paste the new content here */
+.top-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    align-content: center;
+    transition: color 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    align-content: center;
+    height: cover;
+    transition: 0.3s;
+}
+
+.card:hover {
+    opacity: 70%;
+}
+
+.bi-person {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #0095FF;
+}
+
+.bi-box {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #A6FF00;
+}
+
+.bi-cash-stack {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #FFC80C;
+}
+
+.check-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.check-in {
+    align-content: center;
+    background-color: #81e535;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: not-allowed;
+}
+
+
+.check-out {
+    align-content: center;
+    background-color: #FA5A7D;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: not-allowed;
+}
+
+.check-in:hover , .check-out:hover {
+    opacity: 70%;
+}
+
+.bi-check-circle , .bi-x-circle {
+    padding-right: 10px;
+}
+
+.middle-section {
+    display: flex;
+    gap: 20px;
+}
+
+.left-mid-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* ring sales */
+.ring-sales {
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.ring-sales:hover { 
+    opacity: 70%;
+}
+
+.ring-sales h3 {
+    margin-bottom: 15px;
+}
+
+.ring-sales-inside {
+    margin-top: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #FFE2E5;
+}
+
+.ring-sales-inside h5 {
+    font-size: 15px;
+    margin-top: 13px;
+}
+
+.ring-sales-inside p {
+    font-size: 11px;
+}
+
+.bi-bar-chart-line {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #FA5A7D;
+}
+/* date-time */
+.date-time {
+    height: auto;
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    margin-top: auto;
+}
+
+.date-time-inside {
+    align-content: center;
+    margin-top: 12px;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #FFF8E2;
+}
+
+.bi-clock {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #FAAA5A;
+}
+
+.date-time h3 {
+    padding-bottom: 10px;
+}
+
+.date-time-inside h5 {
+    padding-top: 15px;
+    font-weight: 100;
+}
+
+#time {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#date {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.active-employees {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+}
+
+.active-employees h3 {
+    color: #01C4F4;
+    margin-bottom: 20px;
+}
+
+.active-employees table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.active-employees th, .active-employees td {
+    border-bottom: 1px solid #EDF2F6;
+    padding: 8px;
+    text-align: left;
+}
+
+.active-employees tr {
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.active-employees tr:hover {
+    background-color: #F5F5F7;
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-top: auto; 
+}
+
+.footer-section {
+    width: 30%;
+    font-size: 10px;
+}
+.more-information-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-information-column1  , .more-information-column2 , .more-information-column3{
+    display: flex;
+    flex-direction: column;
+}
